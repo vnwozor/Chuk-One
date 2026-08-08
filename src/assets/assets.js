@@ -1,5 +1,5 @@
 import Chuk_Logo from "./Icons/chukone-logo.svg"
-import Hero_Image from "./Images/Hero-image.svg"
+import Hero_Image from "./Images/Hero-Image.svg"
 
 import Image_1 from "./Images/image-1.svg"
 import Image_2 from "./Images/image-2.svg"
