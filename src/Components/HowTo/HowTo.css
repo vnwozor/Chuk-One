@@ -1,0 +1,129 @@
+.how {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+.how-main {
+    margin-top:80px;
+    width:80%;
+}
+
+
+
+.how-div {
+    display:flex;
+    align-items:center;
+    padding:20px 0px;
+    border-top:1px solid rgb(194, 194, 194);
+    margin:30px 0px;
+}
+.how-num {
+    font-size:36px;
+    font-family:roboto serif;
+    color:rgb(255, 167, 66);
+}
+
+
+.how-sub {
+    margin-left:50px;
+}
+.how-h2 {
+    color:white;
+}
+.how-p {
+    width:90%;
+    margin-top:10px;
+    color:rgb(194, 194, 194);
+}
+
+
+
+.how-head-line {
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:20px;
+}
+.how-line {
+    width:44px;
+    height:1px;
+    background-color:black;
+    border:none;
+    margin:0px;
+}
+.how-head-p {
+    color:black;
+}
+
+
+.how-banner {
+    margin-top:30px;
+    background-color:rgb(255, 167, 66);
+    padding:50px 30px;
+    margin-bottom:50px;
+}
+
+.howto-h1 {
+    font-family:roboto serif;
+    color:black;
+    font-weight:500;
+}
+
+
+
+.howfoot {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:40px;
+    width:90%;
+}
+
+
+.howfoot-head {
+    color:rgb(255, 167, 66);
+}
+.howfoot-h1 {
+    color:white;
+}
+.howfoot-des {
+    color:rgb(194, 194, 194);
+}
+.howfoot-btn-div {
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+}
+
+
+
+.howfoot-btn{
+    padding:12px 30px ;
+    font-size:15px;
+    background-color:transparent;
+    border:none;
+    color:black;
+    background-color:rgb(255, 167, 66);
+}
+
+
+.howfoot-btn-op{
+    padding:12px 30px ;
+    font-size:15px;
+    color:rgb(194, 194, 194);
+    background-color:transparent;
+    border:1px solid rgb(194, 194, 194);
+}
+
+@media (max-width: 400px) {
+    .howfoot-h1 {
+        font-size:26px;
+    }
+    .howfoot-des {
+        font-size:14px;
+        width:80%;
+        color:rgb(194, 194, 194);
+    }
+}

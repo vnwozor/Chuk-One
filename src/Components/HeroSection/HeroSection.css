@@ -1,0 +1,137 @@
+.hero-main {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:110px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:50px;
+}
+
+.hero-div {
+    animation: annie 3s ease 0s ;
+}
+
+@keyframes annie {
+    0% {
+        opacity:0;
+        transform: translateX(-900px);
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+.hero-line-div {
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+.hero-line {
+    width:44px;
+    height:1px;
+    background-color:rgb(255, 167, 66);
+    border:none;
+    margin:0px;
+}
+.hero-line-p {
+    color:rgb(255, 167, 66);
+}
+.hero-heading {
+    font-family:roboto serif;
+    color:white;
+    font-size:50px;
+    margin-top:6px;
+    margin-bottom:12px;
+}
+.hero-des {
+    width:70%;
+    color:rgb(228, 226, 226);
+    margin-bottom:16px;
+    font-size:16px;
+}
+.hero-btn-div {
+    display:flex;
+    gap:20px;
+}
+.hero-btn {
+    padding:14px 30px ;
+    font-size:15px;
+    background-color:transparent;
+    border:1px solid rgb(255, 167, 66);
+    color:rgb(255, 167, 66);
+}
+
+.hero-btn-op{
+    color:black;
+    padding:16px 32px ;
+    font-size:15px;
+    border:none;
+    background-color:rgb(255, 167, 66);
+}
+
+
+
+
+.hero-img {
+    width:60%;
+    animation: right 3s ease 0s ;
+}
+
+@keyframes right {
+    0% {
+        opacity:0;
+        transform:translateX(500px);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+
+@media (max-width:400px) {
+    .hero-main {
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .hero-des {
+        width:100%;
+    }
+
+    
+    .hero-img {
+        width:100%;
+    }
+
+    .hero-heading {
+        font-size:45px;
+    }
+
+    .hero-btn {
+        padding:10px 30px;
+    }
+
+    .hero-btn-op{
+        padding:10px 32px ;
+    }
+
+
+}
+
+
+
+@media (min-width:401px) and (max-width:950px) {
+    .hero-main {
+        flex-direction:column;
+        gap:30px;
+    }
+
+    
+    .hero-img {
+        width:100%;
+    }
+}

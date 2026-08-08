@@ -1,0 +1,40 @@
+.company-main {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:100px;
+}
+.company-div {
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin-top:20px;
+}
+.company-de {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.company-p {
+    font-size:16px;
+    color:rgb(228, 226, 226);
+    margin-top:8px;
+}
+
+
+@media (max-width: 660px) {
+    .company-div {
+        display:flex;
+        flex-direction: column;
+        width:80%;
+        gap:20px;
+        margin-top:20px;
+    }
+
+    .company-p {
+        font-size:14px;
+        color:rgb(228, 226, 226);
+        margin-top:8px;
+    }
+}

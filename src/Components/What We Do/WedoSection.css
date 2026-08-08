@@ -1,0 +1,274 @@
+
+
+
+
+
+.wedo-main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:90px;
+}
+
+
+
+.wedo-div {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    align-self: center;
+    width:80%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+
+
+.wedo-head-line {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.wedo-head-p {
+    color:rgb(255, 167, 66);
+}
+
+
+
+.wedo-h1 {
+    color:white;
+    font-family:roboto serif;
+}
+
+
+.wedo-p {
+    width:70%;
+    color:rgb(228, 226, 226);
+    margin-bottom:16px;
+    font-size:16px;
+    margin-bottom:30px;
+}
+.wedo-tabs {
+    display:grid;
+    grid-template-columns:260px 210px 200px 260px;
+    align-items:center;
+    gap:16px;
+    margin-bottom:50px;
+}
+.wedo-tab {
+    display:flex;
+    justify-content:center;
+    color:white;
+    padding: 10px 40px;
+    border:1px solid rgb(228, 226, 226);
+
+}
+
+
+.wedo-img-div {
+    display:flex;
+    align-self:center;
+    gap:16px;
+    margin-bottom:40px;
+}
+.wedo-img {
+    height:280px;
+}
+
+
+
+
+
+
+
+.wedo-lastsection {
+    font-family:roboto serif;
+    width:80%;
+    background-color:rgb(255, 167, 66);
+    padding:50px 40px;
+    display:flex;
+    justify-content:center;
+    justify-self:center;
+    gap:25px;
+}
+.wedo-lastdiv {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border-right:1px solid black;
+    padding:4px 25px 4px 0px;
+}
+
+.wedo-lastdivv {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+.wedo-lasth1 {
+    font-weight:600;
+    font-size:50px;
+}
+.wedo-lastp {
+    font-weight:500;
+    font-size:20px;
+}
+
+
+@media (max-width: 500px) {
+    .wedo-p {
+        width:100%;
+    }
+
+    .wedo-tabs {
+        display:grid;
+        grid-template-columns:260px;
+        align-items:center;
+        gap:16px;
+        margin-bottom:50px;
+    }
+
+    .wedo-img-div {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:16px;
+        margin-bottom:40px;
+    }
+
+    .wedo-lastsection {
+        font-family:roboto serif;
+        width:91%;
+        background-color:rgb(255, 167, 66);
+        padding:50px 20px;
+        display:grid;
+        justify-content:center;
+        justify-self:center;
+        gap:25px;
+    }
+
+    .wedo-lastdiv {
+        border-right:none;
+        border-bottom:1px solid black;
+        padding:0px;
+        padding-bottom:20px;
+    }
+
+
+    .wedo-lasth1 {
+        font-size:40px;
+    }
+    .wedo-lastp {
+        font-weight:500;
+        font-size:16px;
+    }
+
+}
+
+
+@media (min-width: 501px) and (max-width: 670px) {
+    .wedo-tabs {
+        display:grid;
+        grid-template-columns:260px;
+        align-items:center;
+        gap:16px;
+        margin-bottom:50px;
+    }
+
+    .wedo-img-div {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:16px;
+        margin-bottom:40px;
+    }
+
+
+    .wedo-lastsection {
+        font-family:roboto serif;
+        width:100%;
+        background-color:rgb(255, 167, 66);
+        padding:50px 20px;
+        display:grid;
+        justify-content:center;
+        justify-self:center;
+        gap:25px;
+    }
+
+    .wedo-lastdiv {
+        border-right:none;
+        border-bottom:1px solid black;
+        padding:0px;
+        padding-bottom:20px;
+    }
+
+
+    .wedo-lasth1 {
+        font-size:40px;
+    }
+    .wedo-lastp {
+        font-weight:500;
+        font-size:16px;
+    }
+}
+
+
+
+@media (min-width: 671px) and (max-width: 900px) {
+    .wedo-p {
+        width:100%;
+    }
+
+    .wedo-tabs {
+        display:grid;
+        grid-template-columns:260px 260px;
+        align-items:center;
+        gap:16px;
+        margin-bottom:50px;
+    }
+
+    .wedo-img-div {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        gap:16px;
+        margin-bottom:40px;
+    }
+
+    .wedo-lastsection {
+        font-family:roboto serif;
+        width:100%;
+        background-color:rgb(255, 167, 66);
+        padding:50px 40px;
+        display:flex;
+        justify-content:center;
+        justify-self:center;
+        gap:25px;
+    }
+
+    .wedo-lasth1 {
+        font-weight:600;
+        font-size:45px;
+    }
+    .wedo-lastp {
+        font-weight:500;
+        font-size:16px;
+    }
+
+
+    .wedo-lastsection {
+        font-family:roboto serif;
+        width:80%;
+        background-color:rgb(255, 167, 66);
+        padding:50px 20px;
+        display:grid;
+        justify-content:center;
+        justify-self:center;
+        gap:25px;
+    }
+
+    .wedo-lastdiv {
+        border-right:none;
+        border-bottom:1px solid black;
+        padding:0px;
+        padding-bottom:20px;
+    }
+}

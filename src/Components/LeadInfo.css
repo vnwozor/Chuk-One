@@ -1,0 +1,124 @@
+.leader-div {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    height:380px;
+    border:1px solid gray;
+    margin-top:30px;
+}
+
+
+
+.lead-h1 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:roboto serif;
+    font-size:80px;
+    color:white;
+    margin:auto 0px;
+}
+
+.leader-p {
+    color:rgb(228, 226, 226);
+}
+
+
+.lead-info-div {
+    display:flex;
+    justify-content:center;
+    padding:20px 20px;
+    width: 245px;
+    height:108px;
+    border-top:1px solid gray;
+}
+.leader-name {
+    font-family:roboto serif;
+    color:white;
+    font-size:26px;
+    font-weight:500;
+}
+.leader-direction {
+    font-size:14px;
+    color:rgb(255, 167, 66);
+    margin-top:4px;
+    margin-bottom:10px;
+}
+.leader-date {
+    font-size:14px;
+    color:rgb(228, 226, 226);
+}
+
+@media (max-width: 650px) {
+    .lead-h1 {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family:roboto serif;
+        font-size:60px;
+        color:white;
+        margin:auto 0px;
+    }
+    .leader-div {
+        height:310px;
+    }
+
+    .lead-info-div {
+        display:block;
+        justify-content:center;
+        padding:20px 17px;
+        align-self:center;
+        height:108px;
+        border-top:1px solid gray;
+    }
+
+    .leader-name {
+        font-family:roboto serif;
+        color:white;
+        font-size:22px;
+        font-weight:500;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+    .lead-h1 {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family:roboto serif;
+        font-size:60px;
+        color:white;
+        margin:auto 0px;
+    }
+
+    .lead-info-div {
+        display:block;
+        justify-content:center;
+        padding:20px 17px;
+        align-self:center;
+        width: 90%;
+        height:108px;
+        border-top:1px solid gray;
+    }
+
+    .leader-name {
+        font-family:roboto serif;
+        color:white;
+        font-size:22px;
+        font-weight:500;
+    }
+}
+
+
+@media (min-width:901px) and (max-width: 1350px) {
+    .lead-info-div {
+        display:block;
+        justify-content:center;
+        padding:20px 17px;
+        align-self:center;
+        width: 90%;
+        height:108px;
+        border-top:1px solid gray;
+    }
+}
