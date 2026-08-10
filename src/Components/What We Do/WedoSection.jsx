@@ -47,7 +47,7 @@ export const WedoSection = () => {
                     
 
                     <div className='wedo-tab'>
-                        General Contact
+                        General Contract
                     </div>
 
                     <div className='wedo-tab'>
@@ -118,7 +118,7 @@ export const WedoSection = () => {
                         CAC
                     </h1>
                     <p  className='wedo-lastp'>
-                        REGISTERED PRIVSTE LIMITED CO.
+                        REGISTERED PRIVATE LIMITED CO.
                     </p>
                 </div>
 
