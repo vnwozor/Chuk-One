@@ -50,7 +50,7 @@
 }
 .wedo-tabs {
     display:grid;
-    grid-template-columns:260px 210px 200px 260px;
+    grid-template-columns:260px 210px 230px 260px;
     align-items:center;
     gap:16px;
     margin-bottom:50px;
