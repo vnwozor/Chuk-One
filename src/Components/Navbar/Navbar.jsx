@@ -19,14 +19,17 @@ export const Navbar = () => {
         <div className='navbar-div-a'>
             <NavLink to='/' className='navbar-a' href="">
                 Home
+                <hr className='under-line' />
             </NavLink>
 
             <NavLink to='/Projects' className='navbar-a'  href="">
                 Projects
+                <hr className='under-line' />
             </NavLink>
 
             <NavLink to='AboutUs' className='navbar-a'  href="">
                 About Us
+                <hr className='under-line' />
             </NavLink>
         </div>
 
@@ -57,14 +60,17 @@ export const Navbar = () => {
 
                     <NavLink onClick={() => setOpenMenu(!openMenu)} to='/' className='navbar-a' href="">
                         Home
+                        <hr className='under-line' />
                     </NavLink>
 
                     <NavLink onClick={() => setOpenMenu(!openMenu)} to='/Projects' className='navbar-a'  href="">
                         Projects
+                        <hr className='under-line' />
                     </NavLink>
 
                     <NavLink onClick={() => setOpenMenu(!openMenu)} to='AboutUs' className='navbar-a'  href="">
                         About Us
+                        <hr className='under-line' />
                     </NavLink>
                 </div>
 

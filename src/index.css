@@ -25,3 +25,10 @@ h2 {
   margin:0px;
 }
 
+a.active hr {
+  display:block;
+  opacity:1;
+  width:100%;
+  border-width:1px;
+  border:none;
+}
