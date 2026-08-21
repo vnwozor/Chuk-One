@@ -32,7 +32,7 @@ export const ProjectTaken = () => {
                         <div  className='hero-line-div'>
                             <hr className='hero-line'/>
                             <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTER OF WORK
+                                CLIENT : FEDERAL MINISTRY OF WORK
                             </p>
                         </div>
 
@@ -55,7 +55,7 @@ export const ProjectTaken = () => {
                         <div  className='hero-line-div'>
                             <hr className='hero-line'/>
                             <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTER OF WORK
+                                CLIENT : FEDERAL MINISTRY OF WORK
                             </p>
                         </div>
 
