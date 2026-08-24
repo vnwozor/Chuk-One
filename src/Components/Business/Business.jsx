@@ -35,7 +35,7 @@ export const Business = () => {
                 <div className='business-dev'>
                     <div className='business-des-div'>
                         <h1  className='business-des-h1'>
-                            VISSION
+                            VISION
                         </h1>
                         <p  className='business-p'>
                             Our vision is to be the leading engineering and 

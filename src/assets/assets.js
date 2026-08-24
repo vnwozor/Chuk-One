@@ -12,6 +12,14 @@ import Project_3 from "./Images/project-3.svg"
 import Project_4 from "./Images/project-4.svg"
 
 
+import Project_5 from "./Images/construction-building.jpg"
+import Project_6 from "./Images/construction.jpg"
+
+import Project_7 from "./Images/solar-installation.jpg"
+import Project_8 from "./Images/Structural-concrete.jpg"
+import Project_9 from "./Images/Water-infrastructure.jpg"
+
+
 import Menu_bar from "./Images/white-menubar.svg"
 import Close_btn from "./Images/close-btn.svg"
 
@@ -27,6 +35,11 @@ export const assets = {
     Project_2,
     Project_3,
     Project_4,
+    Project_5,
+    Project_6,
+    Project_7,
+    Project_8,
+    Project_9,
     Menu_bar,
     Close_btn
 }

@@ -32,7 +32,7 @@ export const ProjectTaken = () => {
                         <div  className='hero-line-div'>
                             <hr className='hero-line'/>
                             <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTRY OF WORK
+                                CLIENT : FEDERAL MINISTRY OF WORKS
                             </p>
                         </div>
 
@@ -41,7 +41,7 @@ export const ProjectTaken = () => {
                         </p>
 
                         <p className='project-des-loc'>
-                            Location: kaduna, Dungu
+                            Location: Kaduna, Kaduna State
                         </p>
 
                     </div>
@@ -55,16 +55,16 @@ export const ProjectTaken = () => {
                         <div  className='hero-line-div'>
                             <hr className='hero-line'/>
                             <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTRY OF WORK
+                                CLIENT : FEDERAL MINISTRY OF WATER RESOURCES
                             </p>
                         </div>
 
                         <p className='project-des-p'>
-                            CONSTRUCTION OF ROAD
+                            CONSTRUCTION OF CONCRETE TANKS
                         </p>
 
                         <p className='project-des-loc'>
-                            Location: kaduna, Dungu
+                            Location: Jos, Plateau State
                         </p>
 
                     </div>
@@ -74,6 +74,156 @@ export const ProjectTaken = () => {
 
                 </div>
 
+
+
+                <div className='projectT-img-div'>
+                    <img className='project-img' src={assets.Project_7} alt="" />
+
+                    <div className='projectT-des-div'>
+
+                        <div  className='hero-line-div'>
+                            <hr className='hero-line'/>
+                            <p className='hero-line-p'>
+                                CLIENT : RURAL ELECTRIFICATION AGENCY {'(REA)'}
+                            </p>
+                        </div>
+
+                        <p className='project-des-p'>
+                            SOLAR INSTALLATION
+                        </p>
+
+                        <p className='project-des-loc'>
+                            Location: Yola, Adamawa State
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div className='projectT-img-divv'>
+                    
+
+                    <div className='projectT-des-div'>
+
+                        <div  className='hero-line-div'>
+                            <hr className='hero-line'/>
+                            <p className='hero-line-p'>
+                                CLIENT : FEDERAL MINISTRY OF WATER RESOURCES
+                            </p>
+                        </div>
+
+                        <p className='project-des-p'>
+                            CONSTRUCTION OF WATER INFRASTRUCTURE
+                        </p>
+
+                        <p className='project-des-loc'>
+                            Location: Lokoja, Kogi State
+                        </p>
+
+                    </div>
+
+                    <img className='project-img' src={assets.Project_9} />
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className='projectT-img-div'>
+                <img className='project-img' src={assets.Project_6} alt="" />
+
+                <div className='projectT-des-div'>
+
+                    <div  className='hero-line-div'>
+                        <hr className='hero-line'/>
+                        <p className='hero-line-p'>
+                            CLIENT : FEDERAL MINISTRY OF WORKS
+                        </p>
+                    </div>
+
+                    <p className='project-des-p'>
+                        CONSTRUCTION OF BUILDINGS
+                    </p>
+
+                    <p className='project-des-loc'>
+                        Location: Bauchi, Bauchi State
+                    </p>
+
+                </div>
+            </div>
+
+            <div className='projectT-img-divv'>
+                
+
+                <div className='projectT-des-div'>
+
+                    <div  className='hero-line-div'>
+                        <hr className='hero-line'/>
+                        <p className='hero-line-p'>
+                            CLIENT : KADUNA STATE MINISTRY OF WORKS & HOUSING
+                        </p>
+                    </div>
+
+                    <p className='project-des-p'>
+                        CONSTRUCTION OF STRUCTURAL CONCRETE
+                    </p>
+
+                    <p className='project-des-loc'>
+                        Location: Kaduna, Dungu
+                    </p>
+
+                </div>
+
+                <img className='project-img' src={assets.Project_8} />
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div className='projectT-img-div'>
+                <img className='project-img' src={assets.Project_5} alt="" />
+
+                <div className='projectT-des-div'>
+
+                    <div  className='hero-line-div'>
+                        <hr className='hero-line'/>
+                        <p className='hero-line-p'>
+                            CLIENT : FEDERAL CAPITAL TERRITORY ADMINISTRATION {'(FCTA)'}
+                        </p>
+                    </div>
+
+                    <p className='project-des-p'>
+                        CONSTRUCTION OF BUILDINGS
+                    </p>
+
+                    <p className='project-des-loc'>
+                        Location: Abuja, FCT
+                    </p>
+
+                </div>
             </div>
 
             

@@ -21,7 +21,7 @@ export const HeroSection = () => {
             </h1>
 
             <p  className='hero-des'>
-                Chuk-One Integrated Service Ltd delivery engineering construction electrification street lighting and solar installation for public and private clients across the FCT and beyond
+                Chuk-One Integrated Service Ltd delivers engineering construction electrification street lighting and solar installation for public and private clients across the FCT and beyond
             </p>
 
 

@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className='footer-main'>
 
             <p>
-                &copy; 2021 Chuk-One Integrated Service Ltd
+                &copy; 2021 Chuk-One Integrated Services Ltd
             </p>
 
             <p>

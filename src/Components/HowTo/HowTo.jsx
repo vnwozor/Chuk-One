@@ -34,7 +34,7 @@ export const HowTo = () => {
                     </h2>
 
                     <p className='how-p'>
-                        Chuk-One Integrated Service Ltd delivery engineering construction electrification street lighting and solar installation for public and private clients across the FCT and beyond
+                        Chuk-One Integrated Service Ltd delivers engineering construction electrification street lighting and solar installation for public and private clients across the FCT and beyond
                     </p>
                 </div>
         
@@ -108,7 +108,7 @@ export const HowTo = () => {
             </div>
 
             <h1 className='howto-h1'>
-                The light that comes on, The power that stays on - Thats our job. We just Happen have the paper work to prove we can do it 
+                The light that comes on, The power that stays on - That's our job. We just happen to have the paper work to prove we can do it 
             </h1>
 
 

@@ -26,7 +26,7 @@ export const WedoSection = () => {
 
 
                 <h1 className='wedo-h1'>
-                    Six Lines Of Work. One Contructor.
+                    Six Lines Of Work. One Contractor.
                 </h1>
 
                 <p className='wedo-p'>
@@ -37,7 +37,7 @@ export const WedoSection = () => {
 
                 <div className='wedo-tabs'>
                     <div className='wedo-tab'>
-                        Engineering Contruction
+                        Engineering Construction
                     </div>
 
                     <div className='wedo-tab'>

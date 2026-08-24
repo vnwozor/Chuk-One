@@ -6,7 +6,7 @@ export const Company = () => {
         <div className='company-main'>
 
             <h1 className='hero-heading'>
-                Comapany Info
+                Company Info
             </h1>
 
             <div className='company-div'>
