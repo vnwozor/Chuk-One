@@ -1,151 +1,81 @@
 import React from 'react'
-import "./HowTo.css"
-import { Line } from '../WholeLine/Line'
+import './HowTo.css'
+
+const steps = [
+    {
+        title: 'You tell us your scope',
+        text: 'Send the scope, location and timeline. We come back with the next step.',
+    },
+    {
+        title: 'We visit the site',
+        text: 'A site assessment confirms conditions, access and any constraints before we quote.',
+    },
+    {
+        title: 'We build',
+        text: 'Our site team executes to the agreed scope, with regular updates through to completion.',
+    },
+    {
+        title: 'We hand over',
+        text: 'You get a finished, inspected job — with documentation for anything that needs it.',
+    },
+]
 
 export const HowTo = () => {
-  return (
-    <div className='how'>
+    return (
+        <>
+            {/* How it works */}
+            <section className='how section' id='process'>
+                <div className='container'>
+                    <div className='how__head reveal'>
+                        <span className='eyebrow'>02 — How it works</span>
+                        <h2 className='section-title'>Four steps from first call to handover.</h2>
+                    </div>
 
-        <Line fisrt={'NIGERIA'} second={'ABUJA, FCT'}/>
+                    <ol className='how__steps'>
+                        {steps.map((step, i) => (
+                            <li key={step.title} className='how__step reveal' style={{ transitionDelay: `${i * 0.08}s` }}>
+                                <span className='how__num'>0{i + 1}</span>
+                                <h3 className='how__title'>{step.title}</h3>
+                                <p className='body-muted'>{step.text}</p>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+            </section>
 
-        <div className='how-main'>
-            <div>
-                <div className='wedo-head-line'>
-                    <hr className='hero-line' />
-                    <p className='wedo-head-p'>
-                        HOW IT WORKS
+            {/* Why it matters */}
+            <section className='statement' aria-label='Why it matters'>
+                <div className='container statement__inner'>
+                    <span className='statement__label'>03 — Why it matters</span>
+                    <p className='statement__text reveal'>
+                        The light that comes on. The power that stays on. That’s our job —{' '}
+                        <em>we just happen to have the paperwork to prove we can do it.</em>
                     </p>
                 </div>
+            </section>
 
-                <h1 className='wedo-h1'>
-                    Four Steps From First Call To Handover
-                </h1>
-            </div>
-
-            <div className='how-div'>
-
-                <h1 className='how-num'>
-                    01
-                </h1>
-
-                <div className='how-sub'>
-                    <h2 className='how-h2'>
-                        You Tell Us Your Scope
+            {/* Get started */}
+            <section className='cta' id='contact'>
+                <div className='container cta__inner reveal'>
+                    <span className='eyebrow'>Get started</span>
+                    <h2 className='display cta__title'>
+                        Tell us what needs <em>building.</em>
                     </h2>
-
-                    <p className='how-p'>
-                        Chuk-One Integrated Service Ltd delivers engineering construction electrification street lighting and solar installation for public and private clients across the FCT and beyond
-                    </p>
+                    <p className='lead'>Send the scope, location and timeline — we’ll come back with the next step.</p>
+                    <div className='btn-row cta__buttons'>
+                        <a className='btn btn--solid' href='mailto:enekebechuka6@gmail.com?subject=Project%20enquiry'>
+                            Email us
+                            <svg aria-hidden='true' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                                <path d='M5 12h14' />
+                                <path d='M13 6l6 6-6 6' />
+                            </svg>
+                        </a>
+                        <a className='btn btn--ghost' href='https://wa.me/2348122323329' target='_blank' rel='noreferrer'>
+                            Call the office
+                        </a>
+                    </div>
                 </div>
-        
-            </div>
-
-            <div className='how-div'>
-
-                <h1 className='how-num'>
-                    02
-                </h1>
-
-                <div className='how-sub'>
-                    <h2 className='how-h2'>
-                        We Visit The Site
-                    </h2>
-
-                    <p className='how-p'>
-                        A site assessment confirms conditions, access and any constraints before we quote.
-                    </p>
-                </div>
-        
-            </div>
-
-
-            <div className='how-div'>
-
-                <h1 className='how-num'>
-                    03
-                </h1>
-
-                <div className='how-sub'>
-                    <h2 className='how-h2'>
-                        We Build
-                    </h2>
-
-                    <p className='how-p'>
-                        Our Site team executes to the agreed scope, with regular updates through to completion.
-                    </p>
-                </div>
-        
-            </div>
-
-            <div className='how-div'>
-
-                <h1 className='how-num'>
-                    04
-                </h1>
-
-                <div className='how-sub'>
-                    <h2 className='how-h2'>
-                        We hand Over
-                    </h2>
-
-                    <p className='how-p'>
-                        You get a finished, Inspected Job - with documentation for anything that needs it
-                    </p>
-                </div>
-        
-            </div>
-            
-        </div>
-
-
-        <div className='how-banner'>
-
-            <div  className='how-head-line'>
-                <hr className='how-line' />
-                <p className='how-head-p'>
-                    WHY IT MATTERS
-                </p>
-            </div>
-
-            <h1 className='howto-h1'>
-                The light that comes on, The power that stays on - That's our job. We just happen to have the paper work to prove we can do it 
-            </h1>
-
-
-        </div>
-
-        <div className='howfoot'>
-
-            <p className='howfoot-head'>GET STARTED</p>
-
-            <h1 className='howfoot-h1'>
-                Tell Us What Needs Building
-            </h1>
-
-            <p className='howfoot-des'>
-                Send the Scope, Location and Timeline - We'll Come Back With Next Step
-            </p>
-
-
-            <div className='howfoot-btn-div'>
-                
-                <a href="mailto:enekebechuka6@gmail.com?subject=Hello">
-                    <button className='howfoot-btn'>
-                        Email Us
-                    </button>
-                </a>
-                <a href="https://wa.me/2348122323329">
-                    <button  className='howfoot-btn-op'>
-                        Call The Office
-                    </button>
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-    </div>
-  )
+            </section>
+        </>
+    )
 }

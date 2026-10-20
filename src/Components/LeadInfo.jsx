@@ -1,27 +1,18 @@
 import React from 'react'
-import "./LeadInfo.css"
+import './LeadInfo.css'
 
-export const LeadInfo = ({index, id, initails, name, position, date}) => {
+export const LeadInfo = ({ index = 0, initails, name, position, date }) => {
     return (
-        <div key={index} className='leader-div'>
-            <h1  className='lead-h1'>
-                {initails}
-            </h1>
-
-            <div className='lead-info-div'>
-                <div>
-                    <p className='leader-name'>
-                        {name}
-                    </p>
-                    <p className='leader-direction'>
-                        {position}
-                    </p>
-
-                    <p className='leader-date'>
-                        {date}
-                    </p>
-                </div>
+        <article className='lead-card reveal' style={{ transitionDelay: `${index * 0.08}s` }}>
+            <div className='lead-card__top'>
+                <span className='lead-card__initials' aria-hidden='true'>{initails}</span>
             </div>
-        </div>
+
+            <div className='lead-card__info'>
+                <h3 className='lead-card__name'>{name}</h3>
+                <p className='lead-card__position'>{position}</p>
+                <p className='lead-card__date'>{date}</p>
+            </div>
+        </article>
     )
 }

@@ -1,102 +1,43 @@
 import React from 'react'
-import "./Company.css"
+import './Company.css'
+
+const info = [
+    { label: 'Phone number', value: '+234 812 232 3329', href: 'https://wa.me/2348122323329', external: true },
+    { label: 'Email', value: 'enekebechuka6@gmail.com', href: 'mailto:enekebechuka6@gmail.com' },
+    { label: 'Registered office', value: '4 Birnin Kebbi Crescent, Garki 2, Abuja FCT, Nigeria' },
+    { label: 'Registration', value: 'RC 1872413 — CAC Nigeria' },
+]
 
 export const Company = () => {
     return (
-        <div className='company-main'>
-
-            <h1 className='hero-heading'>
-                Company Info
-            </h1>
-
-            <div className='company-div'>
-
-                <div className='company-de'>
-                    <div>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line' />
-                            <p  className='hero-line-p'>
-                                PHONE NUMBER
-                            </p>
-                        </div>
-
-                        <p className='company-p'>
-                            +234 812 232 3329
-                        </p>
-
-                    </div>
-
-                    <div>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line' />
-                            <p  className='hero-line-p'>
-                                REGISTERED OFFICE
-                            </p>
-                        </div>
-
-                        <p  className='company-p'>
-                            4 Birnin Kebbi Crescent, Garki 2, Abuja FCT, Nigeria
-                        </p>
-
-                    </div>
-                    
+        <section className='company' aria-labelledby='company-title'>
+            <div className='container'>
+                <div className='company__head reveal'>
+                    <span className='eyebrow'>Company info</span>
+                    <h2 id='company-title' className='section-title'>On the record.</h2>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div className='company-de'>
-
-                    <div>
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line' />
-                            <p  className='hero-line-p'>
-                                EMAIL 
-                            </p>
+                <dl className='company__grid'>
+                    {info.map((item) => (
+                        <div key={item.label} className='company__item reveal'>
+                            <dt className='mono-label'>{item.label}</dt>
+                            <dd className='company__value'>
+                                {item.href ? (
+                                    <a
+                                        href={item.href}
+                                        className='company__link'
+                                        {...(item.external ? { target: '_blank', rel: 'noreferrer' } : {})}
+                                    >
+                                        {item.value}
+                                    </a>
+                                ) : (
+                                    item.value
+                                )}
+                            </dd>
                         </div>
-
-                        <p  className='company-p'>
-                           enekebechuka6@gmail.com
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line' />
-                            <p  className='hero-line-p'>
-                                REGISTRATION
-                            </p>
-                        </div>
-
-                        <p  className='company-p'>
-                            RC 1872413 - CAC Nigeria
-                        </p>
-
-                    </div>
-                    
-                </div>
+                    ))}
+                </dl>
             </div>
-
-
-
-        </div>
+        </section>
     )
 }

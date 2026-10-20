@@ -1,129 +1,145 @@
+/* ---------- How it works ---------- */
+
 .how {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    margin-bottom:80px;
+  background: var(--surface);
 }
 
-.how-main {
-    margin-top:80px;
-    width:80%;
+.how__head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+  margin-bottom: 72px;
 }
 
-
-
-.how-div {
-    display:flex;
-    align-items:center;
-    padding:20px 0px;
-    border-top:1px solid rgb(194, 194, 194);
-    margin:30px 0px;
-}
-.how-num {
-    font-size:36px;
-    font-family:roboto serif;
-    color:rgb(255, 167, 66);
+.how__steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-
-.how-sub {
-    margin-left:50px;
-}
-.how-h2 {
-    color:white;
-}
-.how-p {
-    width:90%;
-    margin-top:10px;
-    color:rgb(194, 194, 194);
+.how__step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px 28px 8px 0;
+  border-top: 1px solid var(--line-strong);
 }
 
-
-
-.how-head-line {
-    display:flex;
-    align-items: center;
-    gap:10px;
-    margin-bottom:20px;
-}
-.how-line {
-    width:44px;
-    height:1px;
-    background-color:black;
-    border:none;
-    margin:0px;
-}
-.how-head-p {
-    color:black;
+.how__step:first-child {
+  border-top-color: var(--accent);
 }
 
-
-.how-banner {
-    margin-top:30px;
-    background-color:rgb(255, 167, 66);
-    padding:50px 30px;
-    margin-bottom:50px;
+.how__num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
 }
 
-.howto-h1 {
-    font-family:roboto serif;
-    color:black;
-    font-weight:500;
+.how__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
 }
 
+/* ---------- Statement band ---------- */
 
-
-.howfoot {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-top:40px;
-    width:90%;
+.statement {
+  background: var(--accent);
+  color: var(--bg);
 }
 
-
-.howfoot-head {
-    color:rgb(255, 167, 66);
-}
-.howfoot-h1 {
-    color:white;
-}
-.howfoot-des {
-    color:rgb(194, 194, 194);
-}
-.howfoot-btn-div {
-    margin-top:30px;
-    display:flex;
-    gap:20px;
+.statement__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 72px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-
-
-.howfoot-btn{
-    padding:12px 30px ;
-    font-size:15px;
-    background-color:transparent;
-    border:none;
-    color:black;
-    background-color:rgb(255, 167, 66);
+.statement__label {
+  flex: 0 0 220px;
+  padding-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-
-.howfoot-btn-op{
-    padding:12px 30px ;
-    font-size:15px;
-    color:rgb(194, 194, 194);
-    background-color:transparent;
-    border:1px solid rgb(194, 194, 194);
+.statement__text {
+  flex: 1 1 560px;
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
 }
 
-@media (max-width: 400px) {
-    .howfoot-h1 {
-        font-size:26px;
-    }
-    .howfoot-des {
-        font-size:14px;
-        width:80%;
-        color:rgb(194, 194, 194);
-    }
+/* ---------- Call to action ---------- */
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+  padding-top: 136px;
+  padding-bottom: 120px;
+}
+
+.cta__title {
+  max-width: 860px;
+}
+
+.cta__inner .lead {
+  max-width: 460px;
+}
+
+.cta__buttons {
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1024px) {
+  .how__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 40px;
+  }
+
+  .how__step:nth-child(2) {
+    border-top-color: var(--line-strong);
+  }
+}
+
+@media (max-width: 640px) {
+  .how__head {
+    margin-bottom: 48px;
+  }
+
+  .how__steps {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 32px;
+  }
+
+  .how__step {
+    padding-right: 0;
+  }
+
+  .statement__inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .statement__label {
+    flex-basis: 100%;
+    padding-top: 0;
+  }
+
+  .cta__inner {
+    padding-top: 96px;
+    padding-bottom: 88px;
+  }
 }

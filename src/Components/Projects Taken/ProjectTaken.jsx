@@ -1,233 +1,100 @@
 import React from 'react'
-import "./ProjectTaken.css"
+import './ProjectTaken.css'
 import { assets } from '../../assets/assets'
+
+const projects = [
+    {
+        title: 'Construction of road',
+        client: 'Federal Ministry of Works',
+        location: 'Kaduna, Kaduna State',
+        img: assets.Project_1,
+    },
+    {
+        title: 'Construction of concrete tanks',
+        client: 'Federal Ministry of Water Resources',
+        location: 'Jos, Plateau State',
+        img: assets.Project_2,
+    },
+    {
+        title: 'Solar installation',
+        client: 'Rural Electrification Agency (REA)',
+        location: 'Yola, Adamawa State',
+        img: assets.Project_7,
+    },
+    {
+        title: 'Construction of water infrastructure',
+        client: 'Federal Ministry of Water Resources',
+        location: 'Lokoja, Kogi State',
+        img: assets.Project_9,
+    },
+    {
+        title: 'Construction of buildings',
+        client: 'Federal Ministry of Works',
+        location: 'Bauchi, Bauchi State',
+        img: assets.Project_6,
+    },
+    {
+        title: 'Construction of structural concrete',
+        client: 'Kaduna State Ministry of Works & Housing',
+        location: 'Kaduna, Dungu',
+        img: assets.Project_8,
+    },
+    {
+        title: 'Construction of buildings',
+        client: 'Federal Capital Territory Administration (FCTA)',
+        location: 'Abuja, FCT',
+        img: assets.Project_5,
+    },
+]
 
 export const ProjectTaken = () => {
     return (
-        <div className='projectt-main'>
-
-            <div className='projectt-head-div'>
-
-                <h1 className='projectt-h1'>
-                    Project Taken
-                </h1>
-
-                <div className='hero-line-div'>
-
-                    {/* <hr  className='hero-line'/> */}
-
-                    <p className='hero-line-p'>
-                        MAJOR PROJECTS UNDERTAKEN
+        <>
+            <header className='page-head'>
+                <div className='container page-head__inner'>
+                    <span className='eyebrow eyebrow--line'>Major projects undertaken</span>
+                    <h1 className='display'>
+                        Projects <em>taken.</em>
+                    </h1>
+                    <p className='lead'>
+                        Roads, water infrastructure, buildings and solar — delivered for federal, state and FCT clients across Nigeria.
                     </p>
                 </div>
+            </header>
 
-            </div>
+            <section className='section projects'>
+                <div className='container projects__list'>
+                    {projects.map((project, i) => (
+                        <article key={`${project.title}-${i}`} className={`project reveal ${i % 2 ? 'is-flipped' : ''}`}>
+                            <div className='project__media'>
+                                <img
+                                    className='project__img'
+                                    src={project.img}
+                                    alt={`${project.title} — ${project.location}`}
+                                    loading='lazy'
+                                    decoding='async'
+                                />
+                            </div>
 
-            <div>
-                <div className='projectT-img-div'>
-                    <img className='project-img' src={assets.Project_1} alt="" />
+                            <div className='project__info'>
+                                <span className='project__index'>{String(i + 1).padStart(2, '0')} / {String(projects.length).padStart(2, '0')}</span>
+                                <h2 className='project__title'>{project.title}</h2>
 
-                    <div className='projectT-des-div'>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line'/>
-                            <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTRY OF WORKS
-                            </p>
-                        </div>
-
-                        <p className='project-des-p'>
-                            CONSTRUCTION OF ROAD
-                        </p>
-
-                        <p className='project-des-loc'>
-                            Location: Kaduna, Kaduna State
-                        </p>
-
-                    </div>
+                                <dl className='project__meta'>
+                                    <div className='project__meta-row'>
+                                        <dt className='mono-label'>Client</dt>
+                                        <dd>{project.client}</dd>
+                                    </div>
+                                    <div className='project__meta-row'>
+                                        <dt className='mono-label'>Location</dt>
+                                        <dd>{project.location}</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </article>
+                    ))}
                 </div>
-
-                <div className='projectT-img-divv'>
-                    
-
-                    <div className='projectT-des-div'>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line'/>
-                            <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTRY OF WATER RESOURCES
-                            </p>
-                        </div>
-
-                        <p className='project-des-p'>
-                            CONSTRUCTION OF CONCRETE TANKS
-                        </p>
-
-                        <p className='project-des-loc'>
-                            Location: Jos, Plateau State
-                        </p>
-
-                    </div>
-
-                    <img className='project-img' src={assets.Project_2} />
-
-
-                </div>
-
-
-
-                <div className='projectT-img-div'>
-                    <img className='project-img' src={assets.Project_7} alt="" />
-
-                    <div className='projectT-des-div'>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line'/>
-                            <p className='hero-line-p'>
-                                CLIENT : RURAL ELECTRIFICATION AGENCY {'(REA)'}
-                            </p>
-                        </div>
-
-                        <p className='project-des-p'>
-                            SOLAR INSTALLATION
-                        </p>
-
-                        <p className='project-des-loc'>
-                            Location: Yola, Adamawa State
-                        </p>
-
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-                <div className='projectT-img-divv'>
-                    
-
-                    <div className='projectT-des-div'>
-
-                        <div  className='hero-line-div'>
-                            <hr className='hero-line'/>
-                            <p className='hero-line-p'>
-                                CLIENT : FEDERAL MINISTRY OF WATER RESOURCES
-                            </p>
-                        </div>
-
-                        <p className='project-des-p'>
-                            CONSTRUCTION OF WATER INFRASTRUCTURE
-                        </p>
-
-                        <p className='project-des-loc'>
-                            Location: Lokoja, Kogi State
-                        </p>
-
-                    </div>
-
-                    <img className='project-img' src={assets.Project_9} />
-
-
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className='projectT-img-div'>
-                <img className='project-img' src={assets.Project_6} alt="" />
-
-                <div className='projectT-des-div'>
-
-                    <div  className='hero-line-div'>
-                        <hr className='hero-line'/>
-                        <p className='hero-line-p'>
-                            CLIENT : FEDERAL MINISTRY OF WORKS
-                        </p>
-                    </div>
-
-                    <p className='project-des-p'>
-                        CONSTRUCTION OF BUILDINGS
-                    </p>
-
-                    <p className='project-des-loc'>
-                        Location: Bauchi, Bauchi State
-                    </p>
-
-                </div>
-            </div>
-
-            <div className='projectT-img-divv'>
-                
-
-                <div className='projectT-des-div'>
-
-                    <div  className='hero-line-div'>
-                        <hr className='hero-line'/>
-                        <p className='hero-line-p'>
-                            CLIENT : KADUNA STATE MINISTRY OF WORKS & HOUSING
-                        </p>
-                    </div>
-
-                    <p className='project-des-p'>
-                        CONSTRUCTION OF STRUCTURAL CONCRETE
-                    </p>
-
-                    <p className='project-des-loc'>
-                        Location: Kaduna, Dungu
-                    </p>
-
-                </div>
-
-                <img className='project-img' src={assets.Project_8} />
-
-
-            </div>
-
-
-
-
-
-
-
-
-            <div className='projectT-img-div'>
-                <img className='project-img' src={assets.Project_5} alt="" />
-
-                <div className='projectT-des-div'>
-
-                    <div  className='hero-line-div'>
-                        <hr className='hero-line'/>
-                        <p className='hero-line-p'>
-                            CLIENT : FEDERAL CAPITAL TERRITORY ADMINISTRATION {'(FCTA)'}
-                        </p>
-                    </div>
-
-                    <p className='project-des-p'>
-                        CONSTRUCTION OF BUILDINGS
-                    </p>
-
-                    <p className='project-des-loc'>
-                        Location: Abuja, FCT
-                    </p>
-
-                </div>
-            </div>
-
-            
-
-        </div>
+            </section>
+        </>
     )
 }

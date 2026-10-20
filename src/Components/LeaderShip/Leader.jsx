@@ -1,46 +1,39 @@
 import React, { useContext } from 'react'
-import "./Leader.css"
+import './Leader.css'
 import { ShopContext } from '../../Context/ShopContext'
 import { LeadInfo } from '../LeadInfo'
 
 export const Leader = () => {
-
     const { leaderInfo } = useContext(ShopContext)
 
     return (
-        <div className='leader-main'>
-
-            <div className='leadd'>
-                <div  className='hero-line-div'>
-                    <hr className='hero-line' />
-                    <p  className='hero-line-p'>
-                        LEADERSHIP
+        <section className='section leader' aria-labelledby='leader-title'>
+            <div className='container'>
+                <div className='leader__head reveal'>
+                    <div className='leader__title'>
+                        <span className='eyebrow'>Leadership</span>
+                        <h2 id='leader-title' className='section-title'>
+                            The people on <em>the register.</em>
+                        </h2>
+                    </div>
+                    <p className='lead'>
+                        The directors named on Chuk-One’s CAC filing — the same names on every certificate behind this page.
                     </p>
                 </div>
 
-                <h1  className='wedo-h1'>
-                    The People On The Register
-                </h1>
-
-                <p className='leader-p'>
-                    The directors named on Chuk-One's CAC filing — the same 
-                    names on every certificate behind this page.
-                </p>
-
-    
+                <div className='leader__grid'>
+                    {leaderInfo.map((details, index) => (
+                        <LeadInfo
+                            key={details.id}
+                            index={index}
+                            initails={details.initails}
+                            name={details.name}
+                            position={details.position}
+                            date={details.date}
+                        />
+                    ))}
+                </div>
             </div>
-
-
-            <div className='leading-dev'>
-                {
-                    leaderInfo.map((details, index) => {
-                        return (
-                            <LeadInfo key={index} initails={details.initails} name={details.name} position={details.position} date={details.date}/>
-                        )
-                    })
-                }
-            </div>
-
-        </div>
+        </section>
     )
 }

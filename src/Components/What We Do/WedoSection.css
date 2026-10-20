@@ -1,274 +1,226 @@
+/* ---------- Facts strip ---------- */
 
-
-
-
-
-.wedo-main {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-bottom:90px;
+.facts {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
-
-
-.wedo-div {
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    align-self: center;
-    width:80%;
-    margin-top:50px;
-    margin-bottom:50px;
+.facts__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-
-
-.wedo-head-line {
-    display:flex;
-    align-items: center;
-    gap:10px;
-}
-.wedo-head-p {
-    color:rgb(255, 167, 66);
+.facts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 36px 24px;
+  border-right: 1px solid var(--line);
 }
 
-
-
-.wedo-h1 {
-    color:white;
-    font-family:roboto serif;
+.facts__item:first-child {
+  padding-left: 0;
 }
 
-
-.wedo-p {
-    width:70%;
-    color:rgb(228, 226, 226);
-    margin-bottom:16px;
-    font-size:16px;
-    margin-bottom:30px;
-}
-.wedo-tabs {
-    display:grid;
-    grid-template-columns:265px 210px 230px 260px;
-    align-items:center;
-    gap:16px;
-    margin-bottom:50px;
-}
-.wedo-tab {
-    display:flex;
-    justify-content:center;
-    color:white;
-    padding: 10px 40px;
-    border:1px solid rgb(228, 226, 226);
-
+.facts__item:last-child {
+  border-right: 0;
+  padding-right: 0;
 }
 
-
-.wedo-img-div {
-    display:flex;
-    align-self:center;
-    gap:16px;
-    margin-bottom:40px;
-}
-.wedo-img {
-    height:280px;
+.facts__value {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1;
 }
 
-
-
-
-
-
-
-.wedo-lastsection {
-    font-family:roboto serif;
-    width:80%;
-    background-color:rgb(255, 167, 66);
-    padding:50px 40px;
-    display:flex;
-    justify-content:center;
-    justify-self:center;
-    gap:25px;
-}
-.wedo-lastdiv {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    border-right:1px solid black;
-    padding:4px 25px 4px 0px;
+.facts__value.is-accent {
+  color: var(--accent);
 }
 
-.wedo-lastdivv {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
+/* ---------- Heading ---------- */
+
+.wedo__head {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 72px;
+  align-items: end;
+  margin-bottom: 72px;
 }
 
-
-.wedo-lasth1 {
-    font-weight:600;
-    font-size:50px;
-}
-.wedo-lastp {
-    font-weight:500;
-    font-size:20px;
+.wedo__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-
-@media (max-width: 500px) {
-    .wedo-p {
-        width:100%;
-    }
-
-    .wedo-tabs {
-        display:grid;
-        grid-template-columns:260px;
-        align-items:center;
-        gap:16px;
-        margin-bottom:50px;
-    }
-
-    .wedo-img-div {
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:16px;
-        margin-bottom:40px;
-    }
-
-    .wedo-lastsection {
-        font-family:roboto serif;
-        width:91%;
-        background-color:rgb(255, 167, 66);
-        padding:50px 20px;
-        display:grid;
-        justify-content:center;
-        justify-self:center;
-        gap:25px;
-    }
-
-    .wedo-lastdiv {
-        border-right:none;
-        border-bottom:1px solid black;
-        padding:0px;
-        padding-bottom:20px;
-    }
-
-
-    .wedo-lasth1 {
-        font-size:40px;
-    }
-    .wedo-lastp {
-        font-weight:500;
-        font-size:16px;
-    }
-
+.wedo__head .lead {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 460px;
 }
 
+/* ---------- Image cards ---------- */
 
-@media (min-width: 501px) and (max-width: 670px) {
-    .wedo-tabs {
-        display:grid;
-        grid-template-columns:260px;
-        align-items:center;
-        gap:16px;
-        margin-bottom:50px;
-    }
-
-    .wedo-img-div {
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:16px;
-        margin-bottom:40px;
-    }
-
-
-    .wedo-lastsection {
-        font-family:roboto serif;
-        width:100%;
-        background-color:rgb(255, 167, 66);
-        padding:50px 20px;
-        display:grid;
-        justify-content:center;
-        justify-self:center;
-        gap:25px;
-    }
-
-    .wedo-lastdiv {
-        border-right:none;
-        border-bottom:1px solid black;
-        padding:0px;
-        padding-bottom:20px;
-    }
-
-
-    .wedo-lasth1 {
-        font-size:40px;
-    }
-    .wedo-lastp {
-        font-weight:500;
-        font-size:16px;
-    }
+.wedo__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
 }
 
+.wedo__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.wedo__img-wrap {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
 
-@media (min-width: 671px) and (max-width: 900px) {
-    .wedo-p {
-        width:100%;
-    }
+.wedo__img {
+  width: 100%;
+  aspect-ratio: 11 / 20;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
 
-    .wedo-tabs {
-        display:grid;
-        grid-template-columns:260px 260px;
-        align-items:center;
-        gap:16px;
-        margin-bottom:50px;
-    }
+.wedo__card:hover .wedo__img {
+  transform: scale(1.03);
+}
 
-    .wedo-img-div {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr ;
-        gap:16px;
-        margin-bottom:40px;
-    }
+.wedo__card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
 
-    .wedo-lastsection {
-        font-family:roboto serif;
-        width:100%;
-        background-color:rgb(255, 167, 66);
-        padding:50px 40px;
-        display:flex;
-        justify-content:center;
-        justify-self:center;
-        gap:25px;
-    }
+.wedo__card-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.3;
+}
 
-    .wedo-lasth1 {
-        font-weight:600;
-        font-size:45px;
-    }
-    .wedo-lastp {
-        font-weight:500;
-        font-size:16px;
-    }
+.wedo__num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 
+/* ---------- Text rows ---------- */
 
-    .wedo-lastsection {
-        font-family:roboto serif;
-        width:80%;
-        background-color:rgb(255, 167, 66);
-        padding:50px 20px;
-        display:grid;
-        justify-content:center;
-        justify-self:center;
-        gap:25px;
-    }
+.wedo__rows {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
 
-    .wedo-lastdiv {
-        border-right:none;
-        border-bottom:1px solid black;
-        padding:0px;
-        padding-bottom:20px;
-    }
+.wedo__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.wedo__row-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.1;
+  transition: transform 0.35s var(--ease), color 0.2s ease;
+}
+
+.wedo__row:hover .wedo__row-title {
+  transform: translateX(10px);
+  color: var(--accent);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1024px) {
+  .facts__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .facts__item {
+    padding: 28px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .facts__item:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .facts__item:nth-child(3n + 1) {
+    padding-left: 0;
+  }
+
+  .facts__item:nth-child(n + 4) {
+    border-bottom: 0;
+  }
+
+  .wedo__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .facts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .facts__item,
+  .facts__item:nth-child(3n),
+  .facts__item:nth-child(n + 4) {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 24px 16px;
+  }
+
+  .facts__item:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .facts__item:nth-child(2n + 1) {
+    padding-left: 0;
+  }
+
+  .facts__item:last-child {
+    border-bottom: 0;
+  }
+
+  .facts__value {
+    font-size: 36px;
+  }
+
+  .wedo__head,
+  .wedo__rows {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .wedo__head {
+    margin-bottom: 48px;
+  }
+
+  .wedo__rows {
+    gap: 0;
+  }
+
+  .wedo__rows .wedo__row + .wedo__row {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .wedo__cards {
+    gap: 24px 12px;
+  }
+
+  .wedo__card-title {
+    font-size: 15px;
+  }
 }
